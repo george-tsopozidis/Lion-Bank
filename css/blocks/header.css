@@ -1,0 +1,227 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+}
+
+.header {
+  padding-top: 45px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col--align--right {
+  justify-content: flex-end;
+}
+
+.logo {
+  display: block;
+  margin-right: 100px;
+  
+}
+
+.menu__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+.menu__item--active .menu__link {
+  color: #dfb56d;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: #dfb56d;
+}
+
+.contacts {
+  position: relative;
+  font-style: normal;
+  text-align: right;
+}
+
+.contacts__desc {
+  color: #999999;
+  font-size: 11px;
+}
+
+.contacts__phone {
+  text-decoration: none;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.contacts__dropdown-title {
+  font-size: 13px;
+  text-decoration: underline;
+  color: #dfb56d;
+  position: relative;
+  top: -17px;
+  right: 2px;
+}
+
+.contact__dropdown-title:hover .contact__dropdown-menu {
+  right: 0;
+  opacity: 1;
+}
+
+.contact__dropdown-menu {
+  position: absolute;
+  background: #ffffff;
+  width: 163px;
+  height: 77px;
+  padding: 10px;
+  color: #111111;
+  top: 76%;
+  right: -9999px;
+  margin-top: 25px;
+  transition:  opacity .4s;
+  border-radius: 7px;
+}
+
+.contact__dropdown-menu::before {
+  content: "";
+  position: absolute;  
+  bottom: 88%;
+  border: 15px solid transparent;
+  right: 57px;
+  opacity: 1;
+  border-left-color: white;
+  border-right-width: 0px;
+  transform: rotate(270deg);
+}
+
+.contact__dropdown-menu::after {
+  content: "";
+  position: absolute;  
+  bottom: 100%;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 25%;
+}
+
+.hero {
+  margin-bottom: 169px;
+}
+
+.hero__text-section {
+  width: 38%;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  color: #dfb56d;
+  margin-bottom: 46px;
+}
+
+.btn {
+  background: #dfb56d;
+  border-radius: 4px;
+  padding: 17px 37px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.btn--color--ginger:hover {
+  background: #dfb56d;
+  box-shadow: 0 0 25px 0 rgba(223, 181, 109, .15);
+}
+
+.btn:hover {
+  background: #d3a556;
+  box-shadow: 0 0 25px 0 rgba(223, 181, 109, .15);
+}
+
+.btn--color--black {
+  background: #202123;
+}
+
+.btn--color--black:hover {
+  background: #dfb56d;
+}
+
+/*services*/
+
+.top-line {
+  min-height: 415px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  background:  #202123 url("../../images/bg/lion-head-wide.jpg") right 20% top no-repeat;
+}
+
+.top-line__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.top-line__header {
+  padding-top: 25px;
+}
+
+.page-title {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #999999;
+  text-decoration: none;
+}
+
+.breadcrumbs__item::after {
+  content: "/";
+  color: #999999;
+  margin: 0 5px;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
+}
+
+.breadcrumbs__link {
+  color: #dfb56d;
+  font-size: 14px;
+}
